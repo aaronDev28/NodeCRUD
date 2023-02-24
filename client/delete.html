@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+</head>
+
+<body>
+    <div class="container">
+        <form ng-submit="deleteEntry()">
+            <div class="columns mt-4 is-centered">
+                <label for="delete" class="label">Select Name</label>
+                <select ng-model="del" required
+                    ng-options="data.id for data in datas" class="ml-5">
+                    <option selected disabled value="">Select one</option>
+                </select>
+            </div>
+            <div class="columns mt-6 is-centered">
+                <input type="submit" value="Delete" class="button is-link">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAN app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js" integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1 class="title has-text-centered mt-5">Database Connectivity</h1>
+
+    <div ng-app="myApp">
+        <section class="section">
+        <div class="columns is-centered">
+        <a href="#/"><button type="button" class="button is-light">View</button></a>
+        <a href="#create"><button type="button" class="button is-light">Create</button></a>
+        <a href="#delete"><button type="button" class="button is-light">Delete</button></a>
+        <a href="#update"><button type="button" class="button is-light">Update</button></a>
+        <a href="#search"><button type="button" class="button is-light">Search</button></a> <br>
+        </div>
+        </section>
+        <div class="columns is-centered">
+        <ng-view></ng-view>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+</body>
+</html>

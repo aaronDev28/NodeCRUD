@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+
+<body>
+    <br> <br>
+    <div class="container">
+        <form ng-submit="updateEntry()">
+            <div class="columns">
+                        <label for="id" class="label">Id</label>
+                        <select ng-model="id" id="" class="ml-5" required ng-options="data.id for data in datas" ng-change="getId()">
+                            <option selected disabled value="">Select one</option>
+                        </select>
+                    </div>
+                    <div class="columns mt-4">
+                        <label for="name" class="label">Name</label>
+                        <input type="text" ng-model="name" class="input ml-5" required>
+                    </div>
+                    <div class="columns mt-4">
+                        <label for="amount" class="label">Amount</label>
+                        <input type="number" ng-model="amount" class="input ml-5" required>
+                    </div>
+                        <div class="columns mt-4">
+                        <label for="orVal" class="label">Email</label>
+                        <input type="email" ng-model="email" class="input ml-5" required>
+                    </div>
+                        <div class="columns mt-4">
+                        <label for="item" class="label">Item</label>
+                        <input type="text" ng-model="item" class="input ml-5" required>
+                    </div>
+                    <div class="columns mt-4">
+                            <label for="" class="label">Order Status</label>
+                            <select ng-model="status" id="" required class="ml-5">
+                                <option selected disabled value="">Select one</option>
+                                <option value="Delivered">Delivered</option>
+                                <option value="In transit">In Transit</option>
+                                <option value="Failed">Failed</option>
+                            </select>
+                        </div>
+                            <div class="columns is-centered mt-6">
+                <input type="submit" value="Update" class="button is-link">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
